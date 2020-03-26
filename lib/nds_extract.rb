@@ -101,7 +101,7 @@ def movies_with_directors_set(source)
   count = 0
   
   while source[count] do
-    movies[count] = movies_with_director_names(source[count][:name], source[count][:movies])
+    movies[count] = movies_with_director_key(source[count][:name], source[count][:movies])
     count += 1
   end
   
